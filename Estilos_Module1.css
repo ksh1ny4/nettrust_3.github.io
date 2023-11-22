@@ -1,0 +1,171 @@
+/*Estilo generales para el cuerpo de la página, incluyendo la tipografía y el color de fondo.*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*Estilo para el contenedor principal que contiene el contenido y las imágenes.*/
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+/*Estilo para la sección del pie de página, incluyendo el color de fondo, el color del texto y el espaciado.*/
+footer {
+    background-color: hsl(234, 100%, 13%);
+    color: white;
+    text-align: center;
+    height: 150px;
+    padding: 20px;
+}
+
+/*Estilo para los cuadros de información, incluyendo bordes, relleno y alineación del texto.*/
+.contenedor-cuadros {
+    display: flex;
+}
+
+.cuadro {
+    border: 1px solid rgb(12, 102, 138);
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+    width: 360px;
+}
+
+.cuadro img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cuadro p {
+    margin-top: 10px;
+}
+
+/* Estilo para la barra de navegación, incluyendo colores, altura y disposición de los elementos.*/
+nav {
+    background: #000329;
+    height: 80px;
+    width: 100%;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: hwb(0 89% 7%);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active,
+li a:hover {
+    background: #dcdcec;
+    transition: .5s;
+}
+
+.chekbtn {
+    font-size: 30px;
+    color: hsla(177, 98%, 51%, 0.979);
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .chekbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: hwb(0 0% 100%);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    li a:hover,
+    li a.active {
+        background: none;
+        color: #380101;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/*Estilo para la imagen principal del título, incluyendo el tamaño y el centrado.*/
+.imagen-titulo {
+    width: 1345px;
+    height: 255px;
+    display: block;
+    margin: 10px auto;
+}
+
+/*Estilo para los párrafos de texto, incluyendo el tamaño, la alineación y el relleno.*/
+.Mi-parrafo {
+    font-size: 18px;
+    text-align: justify;
+    padding: 16px;
+}
+.Mi-parrafo2 {
+    font-size: 14.5px;
+    text-align: justify;
+}
+.Mi-in {
+    text-align: center;
+    
+}
+/*Estilo para resetear márgenes, rellenos, y otras propiedades.*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/*Estilo para el elemento de video, incluyendo el ancho máximo y el margen derecho.*/
+video {
+    max-width: 46%;
+    margin-right: 0px;
+    padding: 18px;
+}
